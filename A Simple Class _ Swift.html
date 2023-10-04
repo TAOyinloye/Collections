@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://tutorials.tinyappco.com/Swift/SimpleClass -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+            A Simple Class | Swift | Andrew's Tutorials 
+
+</title>
+<link href="./A Simple Class _ Swift_files/css" rel="stylesheet">
+
+<script type="text/javascript" async="" src="./A Simple Class _ Swift_files/js"></script><script async="" src="./A Simple Class _ Swift_files/analytics.js.download"></script><script src="./A Simple Class _ Swift_files/modernizr"></script>
+
+
+
+
+        <link rel="stylesheet" href="./A Simple Class _ Swift_files/xcode.css">
+        <link rel="stylesheet" href="./A Simple Class _ Swift_files/xcode(1).css">
+
+<script type="text/javascript" src="./A Simple Class _ Swift_files/highlight.pack.js.download"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+<link rel="shortcut icon" href="https://tutorials.tinyappco.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://tutorials.tinyappco.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://tutorials.tinyappco.com/">Andrew's Tutorials</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <nav>
+                        <ul class="nav navbar-nav">
+
+                            <li class="">
+                                <a href="https://tutorials.tinyappco.com/Java">Java</a>
+                                
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://tutorials.tinyappco.com/Kotlin">Kotlin</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://tutorials.tinyappco.com/Kotlin/HelloWorld">Hello World</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/NullableTypes">Nullable Types</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/ControlFlow">Control Flow</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/AndroidHelloWorld">Android: Hello World</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/AndroidActivities">Android: Activities</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/ListViews">Android: ListViews</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/APICalls">Android: Using APIs</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/RecyclerViews">Android: RecyclerViews</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/Fragments">Android: Fragments</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/Preferences">Android: App Preferences</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/Notifications">Android: Notifications and Started Services</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/SQLiteDatabase">Android: SQLite database</a></li>
+<li><a href="https://tutorials.tinyappco.com/Kotlin/MediaRecorder">Android: Recording and Playing audio</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://tutorials.tinyappco.com/HTML">HTML</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://tutorials.tinyappco.com/HTML/HTMLPage">A HTML Page</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/HeadingParagraphs">Headings and Paragraphs</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Lists">Lists</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Tables">Tables</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/AttributesValues">Attributes and Values</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Links">Links</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Images">Images</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/ImageReplacement">Image Replacement</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Forms">Forms</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/FormExamples">Form Examples</a></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/ValidationChecks">Validation Checks</a></li>
+<li class="divider"></li>
+<li><a href="https://tutorials.tinyappco.com/HTML/Resources">Resources</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-expanded="true" class="dropdown-toggle" data-toggle="dropdown" href="https://tutorials.tinyappco.com/ASPNET">ASP.NET</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://tutorials.tinyappco.com/ASPNET/Intro">Introduction</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/ImprovedHelloWorld">Improved Hello World</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Masterpages">Master Pages</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/RelativeURLs">Relative URLs</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/QueryStrings">Query Strings</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/ContactForm">Contact Forms</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/JQueryScriptResource">Adding a jQuery Script Resource</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Validation">Validation</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/CustomValidation">Custom Validation</a></li>
+
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Identity">Authentication with ASP.NET Identity</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Authorisation">Authorisation with ASP.NET Identity</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/AccessibleFormView">Accessibility: Fixing the FormView</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/AccessibleLogin">Accessibility: Fixing the Login Control</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Gridviews">GridView: Creating a gridview</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/GridviewEditDelete">GridView: Deleting and editing data</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/GridViewValidation">GridView Validation</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/LinkImageToDatabaseRecord">Linking Images to Database Entries</a></li>
+
+<li><a href="https://tutorials.tinyappco.com/ASPNET/FormViews">FormViews</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Repeaters">Repeaters</a></li>
+
+<li><a href="https://tutorials.tinyappco.com/ASPNET/EntityFramework">Entity Framework: Creating a model</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/EntityFrameworkAddRecords">Entity Framework: Adding records</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/EntityFrameworkListRecords">Entity Framework: Listing records</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/EntityFrameworkSpecificRecord">Entity Framework: Displaying a specific record</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/EntityFrameworkImageUploads">Entity Framework: Uploading Images</a></li>
+
+<li><a href="https://tutorials.tinyappco.com/ASPNET/WorkingWithGit">Working with Git</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/PayPal">PayPal Integration</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/MemeGenerator">Image Manipulation</a></li>
+<li class="divider"></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/Resources">Resources</a></li>
+<li class="divider"></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/securityTables">Deprecated: Security: Tables</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/SecurityProjectConfiguration">Deprecated: Security: Project Configuration</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/SecurityDatabaseConnection">Deprecated: Security: Database Connection</a></li>
+<li><a href="https://tutorials.tinyappco.com/ASPNET/SecurityLoginPageLocation">Deprecated: Security: Login Page Location</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="active dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://tutorials.tinyappco.com/Swift">Swift</a>
+                                <ul class="dropdown-menu">
+                                    
+<li><a href="https://tutorials.tinyappco.com/Swift/Methods">Methods</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/SimpleClass">Simple Class</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/Optionals">Optionals</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/UsingArrays">Arrays</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/ClassExtensions">Class Extensions</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/TernaryOperator">Ternary operator</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/Bingo">Bingo</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/ProtocolsDelegates">Protocols and Delegates</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/Generics">Generics</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/PersistDataProject">Persisting data with NSCoding</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/BingoUI">Bingo with a UI</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/LocationServices">iOS: Location Services</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/AdditionalScreen">iOS: External Display</a></li>
+<li><a href="https://tutorials.tinyappco.com/Swift/WatchMineSweeper">watchOS: Minesweeper</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://tutorials.tinyappco.com/SwiftGames">SpriteKit</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://tutorials.tinyappco.com/SwiftGames/Magic8">Magic 8 Ball</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/Bamboozle">Bamboozle</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/Timer">Timer</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/DragDrop">Drag &amp; drop</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/AirHockey">Air Hockey</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/LightsOut">Lights Out</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/ParkgatePigeons">Parkgate Pigeons</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/LevelSelection">Level Selection</a></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/Sound">Playing Sound</a></li>
+<li class="divider"></li>
+<li><a href="https://tutorials.tinyappco.com/SwiftGames/Resources">Resources</a></li>
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <div class="container body-content">
+        
+
+
+
+<h2>A Simple Class</h2>
+<p>The Liskov Substitution Principle states that "in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed, etc.)"</p>
+<p>This tutorial will show you how to create an class which will substitute text for the S and T in the example, so the concept is easier to understand, for example, replacing S with "Car" and T with "Vehicle" (as Car could be a subtype of vehicle), it will render the following paragraph: </p>
+<samp>If Car is a subtype of Vehicle, then objects of type Vehicle may be replaced with objects of type Car (i.e., objects of type Car may substitute objects of type Vehicle) without altering any of the desirable properties of that program (correctness, task performed, etc.)</samp>
+<h3>Writing the code</h3>
+<ol>
+    <li>Create a new OS X Application in Xcode, and choose the 'Command Line Tool' Option</li>
+    <li>Name the product 'LSP', and ensure the language is set to Swift</li>
+    <li>Save it somewhere you can remember</li>
+    <li>Add a new Swift file to your project by choosing File - New - File from the menu bar</li>
+    <li>Choose Swift file as the type, and name it LiskovPhraseMaker</li>
+    <li>Add the following code to the new file, to create a class called LiskovPhraseMaker:
+    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LiskovPhraseMaker</span> </span>{
+    
+}</code></pre></li>
+    <li>The class needs two properties which will store the type and subtype. Add the following code inside the class declaration:<pre><code class="hljs kotlin"><span class="hljs-comment">//class properties</span>
+<span class="hljs-keyword">var</span> type = <span class="hljs-string">"T"</span>
+<span class="hljs-keyword">var</span> subtype = <span class="hljs-string">"S"</span></code></pre>This will create two string variables, with default text of S and T</li>
+    <li>Add a method inside the class, which will replace the values in the sentence describing the Liskov Substitution Principle with the values from the variables as follows:<pre><code class="hljs swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">modifiedLiskovPhrase</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span>{
+        
+<span class="hljs-keyword">return</span> <span class="hljs-string">"If <span class="hljs-subst">\(subtype)</span> is a subtype of <span class="hljs-subst">\(type)</span>, then objects of type <span class="hljs-subst">\(type)</span> may be replaced with objects of type <span class="hljs-subst">\(subtype)</span> (i.e., objects of type <span class="hljs-subst">\(subtype)</span> may substitute objects of type <span class="hljs-subst">\(type)</span>) without altering any of the desirable properties of that program (correctness, task performed, etc.)"</span>
+    }</code></pre></li>
+    <li>Open the main.swift file, and after the <code class="keyword">import</code> statement, replace the existing code with that shown below, to make a new instance of the LiskovPhraseMaker class, and call the modifiedLiskovPhrase method:<pre><code class="hljs swift"><span class="hljs-keyword">var</span> phraseMaker = <span class="hljs-type">LiskovPhraseMaker</span>()
+<span class="hljs-built_in">print</span>(phraseMaker.modifiedLiskovPhrase())</code></pre></li>
+    <li>Run the application, and you should see the Liskov Substitution Principle output in the console</li>
+    <li>The idea of the our Liskov phrase maker is to allow us to see it in the context of and actual type and sub type. To do this we need to change the <code>type</code> and <code>subtype</code> variables, before calling the modifiedLiskovPhrase method</li>
+    <li>Add the following code in between the lines of code you added above
+    <pre><code class="hljs swift"><span class="existing"><span class="hljs-keyword">var</span> phraseMaker = <span class="hljs-type">LiskovPhraseMaker</span>()</span>
+phraseMaker.type = <span class="hljs-string">"Feline"</span>
+phraseMaker.subtype = <span class="hljs-string">"Lion"</span>
+<span class="existing"><span class="hljs-built_in">print</span>(phraseMaker.modifiedLiskovPhrase())</span></code></pre></li>
+    <li>Run the application again, and you should see the phrase output but with 'Feline' and 'Lion' as the type and subtype respectively</li>
+</ol>
+<h3>Improving the application</h3>
+<p>At present it is possible to set just the type or subtype, and not the other, which could lead to some incorrect phrases, for example <samp>if S is a subtype of Feline</samp>, in order to avoid this, we could create a method which requires both the type and subtype to be set at the same time, and then make the <code>type</code> and <code>subtype</code> properties private, so they cannot be set separately</p>
+<ol start="14">
+    <li>Firstly, in the LiskovPhraseMaker class, create a method which allows the type and subtype to be set as follows:<pre><code class="hljs swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">set</span><span class="hljs-params">(type:String, subtype:String)</span></span>{
+    <span class="hljs-keyword">self</span>.type = type
+    <span class="hljs-keyword">self</span>.subtype = subtype
+}</code></pre>You will notice that the parameters the method takes (type and subtype) have the same names as the properties we created earlier. In order to differentiate between them in the method body, we prefix the properties with the <code class="keyword">self</code> keyword</li>
+    <li>Secondly, add the word <code class="keyword">private</code> before each of the properties:
+    <pre><code class="hljs kotlin"><span class="hljs-keyword">private</span> <span class="existing"><span class="hljs-keyword">var</span> type = <span class="hljs-string">"T"</span></span>
+<span class="hljs-keyword">private</span> <span class="existing"><span class="hljs-keyword">var</span> subtype = <span class="hljs-string">"S"</span></span></code></pre></li>
+    <li>Finally, open the main.swift file, you will notice that there are now errors on the lines where you have specified the type and subtype (because the properties they refer to are now private). Replace those lines of code with a call to the method you just created: 
+    <pre><code class="hljs bash">phraseMaker.set(<span class="hljs-built_in">type</span>: <span class="hljs-string">"Canine"</span>, subtype: <span class="hljs-string">"Dog"</span>)</code></pre> </li>
+    <li>Run the application and you should see the same result as before, albeit with different types</li>
+</ol>
+
+        <hr>
+        <footer>
+            
+            <p>This site uses cookies for analytics, you may disable them in your <a href="http://www.civicuk.com/cookie-control/browser-settings">browser settings</a></p>
+        </footer>
+    </div>
+
+    <script src="./A Simple Class _ Swift_files/jquery"></script>
+
+    <script src="./A Simple Class _ Swift_files/bootstrap"></script>
+
+    
+    <script src="./A Simple Class _ Swift_files/analytics.js(1).download"></script>
+
+
+
+</body></html>
